@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<head>
+  <meta charset='UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <link rel='icon' type='image/favicon.ico' href='image/favicon.ico' sizes='32x32'>
+  <link href='styles.css' rel='stylesheet'>
+  <script defer src='script.js'></script>
+  <title>The Bridge Quiz</title>
+</head>
+<body>
+  <!-- contenedor de pregunta y botones de respuesta -->
+  <div class='container'>
+    <div id='question-container' class='hide'>
+      <div id='question'>Pregunta</div>
+      <div id='answer-buttons' class='btn-grid'>
+        <button class='btn'>Respuesta 1</button>
+        <button class='btn'>Respuesta 2</button>
+        <button class='btn'>Respuesta 3</button>
+        <button class='btn'>Respuesta 4</button>
+      </div>
+    </div>
+    <div class='controls'>
+      <button id='start-btn' class='start-btn btn'>Empezar</button>
+      <button id='next-btn' class='next-btn btn hide'>Siguiente</button>
+    </div>
+  </div>
+  <!-- Ventana modal -->
+        <p><a href='#popup'></a></p>
+        <div id='popup' class='overlay'>
+            <div id='popupBody'>
+                <p id=score><p>
+                <a id='close' href='#'>&times;</a>
+                <div class='popupContent'>
+                    <img  id='popupImage' src='image/lose.gif'>
+                </div>
+            </div>
+        </div>
+</body>
+</html>
